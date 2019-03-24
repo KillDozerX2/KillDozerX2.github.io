@@ -1,152 +1,74 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-body, html {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
+body {
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-/*Shared Styles*/
-
-/*Container styles*/
 .container {
-	width: 60%;
-	margin: 0 20%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  bottom: 5%;
+  width: 74%;
+  height: 84%;
+  padding: 3%;
+  margin: 0;
+  background-color: whitesmoke;
+  z-index: 999;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
 }
-#side {
-	width: 24%;
-	float: left;
-	height: 90vh;
-	background-color: #2a4056;
-	color: white;
-	padding: 5vh 3%;
-	overflow: hidden;
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(218, 224, 234, 0.8);
+  margin: 10px 0px;
 }
-#main {
-	width: 64%;
-	height: 100vh;
-	float: left;
-	padding: 0% 3%;
-	overflow: hidden;
+.header {
+  height: 20%;
+  overflow: hidden;
 }
-
-.imgSection, .sideSection {
-	height: 30vh;
+.header .title {
+  width: 80%;
+  float: left;
 }
-/* Image styles */
-.imgSection img {
-	width: 80%;
-	height: 80%;
-	border-radius: 50%;
+.header .titleImage {
+  width: 18%;
+  height: 100%;
+  float: left;
 }
-
-/* Text Styles */
- #side p {
- 	margin: 10px;
+.header .titleImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
-#side a {
-	text-decoration: none;
-	color: white;
+.profile {
+  width: 100%;
+  height: 20%;
+}
+.profile p {
+  margin: 5px;
+}
+.side {
+  width: 28%;
+  float: left;
+  padding-right: 2%;
+}
+.main {
+  width: 70%;
+  float: left;  
+}
+/* Skills */
+.skills span {
+  display: block;
 }
 .title {
-	width: auto;
-	display: inline-block;
+  font-weight: 1000;
 }
-#side .title {
-	border-bottom: 2px solid white;
-}
-#main .title {
-	font-size: 1.5em;
-	border-bottom: 5px solid #2a4056;
-}
-
-/* Main Styles */
-#main .name {
-	width: 100%;
-	display: inline-block;
-}
-
-/* Skill slider */
-.skills {
-	width: 60%;
-}
-.skillContainer {
-	margin-top: 5px;
-	width: 100%;
-	background-color: #ddd;
-	height: 20px;
-}
-.slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #2a4056;
-}
-
-.slider::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #2a4056;
-}
-/* Media querries */
-@media only screen and (max-width: 600px) {
-  .container {
-	width: 100%;
-	margin: 0;
-  }
-  #side {
-  	width: 29%;
-  }
-  #main {
-	width: 59%;
-  }
-  .slider {
-
-  }
-}
-@media only screen and (max-height: 550px){
-
-  #side {
-  	height: 110vh;
-  }
-  #main {
-	height: 110vh;
-  }
-  .imgSection, .sideSection {
-  	height: 36vh;
-  }
-}
-@media only screen and (max-height: 450px){
-
-  #side {
-  	height: 120vh;
-  }
-  #main {
-	height: 120vh;
-  }
-  .imgSection, .sideSection {
-  	height: 40vh;
-  }
-}
-@media only screen and (min-height: 768px){
-  .imgSection, .sideSection {
-  	height: 231px;
-  }
-}
-/* End Media querries*/
